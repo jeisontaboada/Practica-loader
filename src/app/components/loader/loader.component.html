@@ -1,0 +1,13 @@
+<ion-content>
+  <div class="loader-container">
+    <img [src]="images[currentIndex]" /> <!-- Mostrar la imagen actual -->
+    <div class="absolute__container">
+      <ion-text>{{ currentText }}</ion-text>
+      <ion-button (click)="nextImage()" expand="block" mode="ios" color="primary" shape="round"> <!--Utilizamos una propiedad que nos da ionic sobre el boton-->
+        Siguiente
+        <ion-icon slot="end" style="margin-top: -2px;" name="chevron-forward-outline"></ion-icon>
+      </ion-button>
+
+    </div>
+  </div>
+</ion-content>
